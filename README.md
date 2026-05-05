@@ -1,2 +1,2 @@
 # piedra
-ejercicio
+ejercicio.
