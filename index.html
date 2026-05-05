@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>PIEDRA PAPEL TIJERAS</title>
+</head>
+<body class="container w-4/5 mx-auto bg-cyan-300 ">
+
+
+    <details class="mb-5">
+
+            <summary class="bg-cyan-700 text-white font-bold">4.8.Juguemos Piedra, papel o tijera</summary>
+
+            <p> Escribe un programa que te permita jugar👊piedra✋papel o✌tijera con el ordenador.  
+
+                para ello el ordenador deberá generar un número aleatorio entre 1 y 3 que represente 1. piedra.
+                2. papel y 3 tijera respetivamente, y el usuario/a deberá responder a su vez con un número entre el
+                el 1 y el 3 después de mostrar la siguiente pantalla:
+
+                Si el usuari/a indica algún número diferente al solicitado, deberá aparecer el siguiente mensaje:
+                « Entiendo que no quieres jugar. Adiós »
+                En caso contrario, indicar el ganador/a de la siguiente manera:
+                « Yo xx y tu xxxx.¡ He ganado!, o Has ganado! » Según sea el caso.
+                Ejemplo:« Yo papel y tú tijera ¡ Has ganado! » 
+
+                    
+
+            </p>
+
+
+
+    </details>
+
+             <div class="   bg-cyan-200 ml-2 pb-2 mt-3"> 
+
+                <h1 class=" text-2xl text-cyan-700 font-bold ml-1">Jugar a piedra, papel o tijera: </h1>
+
+
+                <div  class=" flex items-center gap-5   bg-cyan-200 ml-2 pb-2 mt-3"> 
+
+                <ol class="list-decimal ml-10 mb-2  text-cyan-700 font-bold  ">
+
+                     <li>👊Piedra</li>
+                     <li>✋Papel</li>
+                     <li>✌Tijera</li>
+
+
+                </ol>
+
+                <label class="ml-1  text-cyan-700 font-bold   ">Tu elección (1-3):  </label>
+                <input class="border-3 border-cyan-700 ml-1 text-center text-cyan-700  font-bold cursor-pointer transition-all duration-500 ease-in-out rounded-2xl  hover:border-green-700 "  type="number" id="eleccion">
+
+                <button class="border-2 border-cyan-700 bg-cyan-600 cursor-pointer rounded-3xl px-2  text-white font-bold  transition-all duration-500 ease-in-out  hover:bg-green-500  hover:shadow-lg shadow-green-400 hover:text-cyan-950  " 
+                 type="button" onclick="mostrar()" >MOSTRAR</button>
+
+
+                <p class="text-cyan-600 font-extrabold" id="resultado"></p>
+
+             </div>     
+
+
+    <script src="js/juego.js"></script>
+
+    
+</body>
+</html>
